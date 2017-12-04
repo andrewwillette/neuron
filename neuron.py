@@ -31,7 +31,7 @@ signalOne = []
 signalTwo = []
 signalThree = []
 signalFour = []
-for x in range (3000) : 
+for x in range(5000, 8000) : 
 	#print audData[x][0]
 	signalOne.append(audDataOne[x][0])
 	signalTwo.append(audDataTwo[x][0])
@@ -48,7 +48,7 @@ training_set_outputs = array([[1,0,1]]).T
 
 random.seed(1)
 
-synaptic_weights = 2 * random.random((3, 1)) - 1
+synaptic_weights = 2 * random.random((3000, 1)) - 1
 
 for iteration in xrange(10000):
 
